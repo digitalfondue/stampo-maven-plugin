@@ -1,4 +1,4 @@
-package ch.digitalfondue.mvnstampo;
+package ch.digitalfondue.stampo;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -38,6 +38,7 @@ public class StampoMavenServe extends AbstractMojo {
     serve.setHostname(hostname);
     serve.setDisableAutoReload(disableAutoReload);
     serve.setDisableRebuildOnChange(disableRebuildOnChange);
+    serve.setBlockingOnStart(true);
     
     serve.run();
   }
