@@ -1,5 +1,5 @@
 # stampo-maven-plugin
-maven plugin for Stampo, static website generator
+maven plugin for [Stampo](https://github.com/digitalfondue/stampo), static website generator
 
 ## Goals
 
