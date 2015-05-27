@@ -72,7 +72,7 @@
         </dependency>
         
         <dependency>
-            <groupId>ch.digitalfondue</groupId>
+            <groupId>ch.digitalfondue.stampo</groupId>
             <artifactId>stampo</artifactId>
             <version>1.0</version>
         </dependency>
