@@ -38,8 +38,12 @@ disable auto reload of the source project
 
 disable rebuild the source project when there are changes
 
-## Maven repository
-Coming soon!
+## Maven central repository
+```
+<groupId>ch.digitalfondue.stampo</groupId>
+<artifactId>stampo-maven-plugin</artifactId>
+<version>1.0</version>
+```
 
 ## Example pom.xml
 ```
