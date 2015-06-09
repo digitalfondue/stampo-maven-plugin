@@ -16,10 +16,14 @@ public class StampoMavenBuild extends AbstractMojo {
   
   @Parameter(required=true)
   private String outputDir;
+  
+  @Parameter(defaultValue="false")
+  private boolean hideDraft;
 
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
     Build build = new Build();
+    build.setHideDraft(hideDraft);
     build.setSrcPath(srcDir);
     build.setDistPath(outputDir);
     build.run();

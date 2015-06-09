@@ -17,9 +17,13 @@ public class StampoMavenCheck extends AbstractMojo {
   @Parameter(required=true)
   private String outputDir;
   
+  @Parameter(defaultValue="false")
+  private boolean hideDraft;
+  
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
     Check check = new Check();
+    check.setHideDraft(hideDraft);
     check.setSrcPath(srcDir);
     check.setDistPath(outputDir);
     check.run();

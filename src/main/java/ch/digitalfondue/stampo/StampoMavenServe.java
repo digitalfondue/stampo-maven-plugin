@@ -29,9 +29,13 @@ public class StampoMavenServe extends AbstractMojo {
   @Parameter(defaultValue="false")
   private boolean disableAutoReload;
   
+  @Parameter(defaultValue="false")
+  private boolean hideDraft;
+  
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
     Serve serve = new Serve();
+    serve.setHideDraft(hideDraft);
     serve.setSrcPath(srcDir);
     serve.setDistPath(outputDir);
     serve.setPort(port);

@@ -38,11 +38,15 @@ disable auto reload of the source project
 
 disable rebuild the source project when there are changes
 
+###### hideDraft (default=false)
+
+hide or show content marked with "draft: true" metadata
+
 ## Maven central repository
 ```
 <groupId>ch.digitalfondue.stampo</groupId>
 <artifactId>stampo-maven-plugin</artifactId>
-<version>1.0</version>
+<version>1.1</version>
 ```
 
 ## Example pom.xml
@@ -50,7 +54,7 @@ disable rebuild the source project when there are changes
 <plugin>
   <groupId>ch.digitalfondue.stampo</groupId>
   <artifactId>stampo-maven-plugin</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <executions>
   <execution>
 	  <phase>compile</phase>
@@ -60,8 +64,8 @@ disable rebuild the source project when there are changes
   </execution>
   </executions>
   <configuration>
-    <srcDir>src/main/resources/site</srcDir>
-    <outputDir>${project.build.directory}/stampo/</outputDir>
+    <srcDir>site</srcDir>
+    <outputDir>${project.build.directory}/site/</outputDir>
     <port>45001</port>
   </configuration>
 </plugin>
