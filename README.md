@@ -43,14 +43,14 @@ disable rebuild the source project when there are changes
 hide or show content marked with "draft: true" metadata
 
 ## Maven central repository
-```
+```XML
 <groupId>ch.digitalfondue.stampo</groupId>
 <artifactId>stampo-maven-plugin</artifactId>
 <version>1.1</version>
 ```
 
 ## Example pom.xml
-```
+```XML
 <plugin>
   <groupId>ch.digitalfondue.stampo</groupId>
   <artifactId>stampo-maven-plugin</artifactId>
