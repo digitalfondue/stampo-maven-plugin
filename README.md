@@ -27,8 +27,9 @@ location where to publish the generated stampo project
 
 ###### archetype (default=basic)
 
-define which template to use when generating a basic stampo project
-One of:
+define which template to use when generating a basic stampo project.
+
+Allowed values:
 * basic: a simple index page
 * site: a multilanguage site with paginated news
 * blog: a multilanguage blog with pagination and tags support
