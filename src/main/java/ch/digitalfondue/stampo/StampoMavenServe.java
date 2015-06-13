@@ -11,10 +11,10 @@ import ch.digitalfondue.stampo.command.Serve;
 @Mojo(name="serve")
 public class StampoMavenServe extends AbstractMojo {
 
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${basedir}/src/main/stampo")
   private String srcDir;
   
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${project.build.directory}/stampo")
   private String outputDir;
   
   @Parameter(defaultValue="8080")

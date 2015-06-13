@@ -11,10 +11,10 @@ import ch.digitalfondue.stampo.command.Check;
 @Mojo(name="check")
 public class StampoMavenCheck extends AbstractMojo {
 
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${basedir}/src/main/stampo")
   private String srcDir;
   
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${project.build.directory}/stampo")
   private String outputDir;
   
   @Parameter(defaultValue="false")

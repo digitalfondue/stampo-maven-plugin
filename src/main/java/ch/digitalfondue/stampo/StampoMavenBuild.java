@@ -11,10 +11,10 @@ import ch.digitalfondue.stampo.command.Build;
 @Mojo(name="build")
 public class StampoMavenBuild extends AbstractMojo {
   
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${basedir}/src/main/stampo")
   private String srcDir;
   
-  @Parameter(required=true)
+  @Parameter(required=true, defaultValue = "${project.build.directory}/stampo")
   private String outputDir;
   
   @Parameter(defaultValue="false")
