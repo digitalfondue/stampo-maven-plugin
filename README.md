@@ -60,7 +60,7 @@ hide or show content marked with "draft: true" metadata
 ```XML
 <groupId>ch.digitalfondue.stampo</groupId>
 <artifactId>stampo-maven-plugin</artifactId>
-<version>1.1</version>
+<version>1.2</version>
 ```
 
 ## Example pom.xml
