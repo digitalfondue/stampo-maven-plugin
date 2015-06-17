@@ -78,7 +78,7 @@ hide or show content marked with "draft: true" metadata
   </execution>
   </executions>
   <configuration>
-    <srcDir>{basedir}/src/main/stampo</srcDir>
+    <srcDir>${basedir}/src/main/stampo</srcDir>
     <outputDir>${project.build.directory}/stampo</outputDir>
     <port>45001</port>
   </configuration>
