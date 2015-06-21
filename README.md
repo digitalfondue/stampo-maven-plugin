@@ -60,7 +60,7 @@ hide or show content marked with "draft: true" metadata
 ```XML
 <groupId>ch.digitalfondue.stampo</groupId>
 <artifactId>stampo-maven-plugin</artifactId>
-<version>1.2</version>
+<version>1.2.1</version>
 ```
 
 ## Example pom.xml
@@ -68,7 +68,7 @@ hide or show content marked with "draft: true" metadata
 <plugin>
   <groupId>ch.digitalfondue.stampo</groupId>
   <artifactId>stampo-maven-plugin</artifactId>
-  <version>1.2</version>
+  <version>1.2.1</version>
   <executions>
   <execution>
 	  <phase>compile</phase>
