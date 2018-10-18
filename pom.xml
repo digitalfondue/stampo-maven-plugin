@@ -3,7 +3,7 @@
 
     <groupId>ch.digitalfondue.stampo</groupId>
     <artifactId>stampo-maven-plugin</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
     <inceptionYear>2015</inceptionYear>
 
